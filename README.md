@@ -58,3 +58,10 @@ To avoid `Grader Error: Grader feedback not found` or similar unexpected errors 
 - **Model Performance:** The model correctly classified the vast majority of tweets, with only a few misclassifications (shown in error analysis).
 
 ### Sample Predictions
+
+I am happy -> 0.519258
+I am bad -> 0.494338
+great -> 0.516051
+great great great -> 0.548021
+great great great great -> 0.563876
+
