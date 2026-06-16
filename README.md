@@ -70,3 +70,27 @@ great great great great -> 0.563876
 
 The cost after training is 0.22525459.
 The resulting vector of weights is [6e-08, 0.00053785, -0.00055884]
+
+
+### Classification Logic
+- **Positive sentiment:** Prediction > 0.5
+- **Negative sentiment:** Prediction ≤ 0.5
+
+## 🔗 Key Concepts & Formulas
+- **Sigmoid Function:** `h(z) = 1 / (1 + e^(-z))`
+- **Log Loss (Binary Cross-Entropy):** `J(θ) = -1/m * [y·log(h) + (1-y)·log(1-h)]`
+- **Gradient Descent Update:** `θ = θ - (α/m) * X^T · (h - y)`
+- **Prediction:** `y_pred = sigmoid(x · θ)`
+- **Feature Vector:** `[bias=1, positive_word_count, negative_word_count]`
+
+## 🧪 Error Analysis Observations
+The model occasionally misclassified tweets that:
+- Contained mixed sentiment expressions (e.g., "good" and "bad" in same tweet)
+- Used ambiguous or sarcastic language
+- Had neutral statements that didn't strongly indicate either sentiment
+- Contained emojis or special characters that weren't captured in preprocessing
+
+## 📚 Acknowledgments
+This assignment was completed as part of the Natural Language Processing specialization on **DeepLearning.AI**. The logistic regression implementation follows the classical approach to binary classification, with NLP-specific adaptations for text feature extraction from tweets.
+
+---
