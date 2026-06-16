@@ -65,3 +65,8 @@ great -> 0.516051
 great great great -> 0.548021
 great great great great -> 0.563876
 
+
+### Cost Convergence
+
+The cost after training is 0.22525459.
+The resulting vector of weights is [6e-08, 0.00053785, -0.00055884]
